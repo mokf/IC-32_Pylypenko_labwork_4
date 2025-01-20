@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка Менеджера Підписок</title>
+
+    <!-- Підключення зовнішнього шрифту -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Підключення локального стилю -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Менеджер Підписок</h1>
+    </header>
+
+    <!-- Секція з зображенням і таблицею -->
+    <section class="image-table">
+        <img src="https://i.pinimg.com/736x/64/8d/aa/648daa4916cb73b0b7102f07628ce035.jpg" alt="Зображення підписок" style="width: 20%;">
+        <div class="table-container">
+            <h2>Таблиця підписок</h2>
+            <table>
+                <tr>
+                    <th>Назва сервісу</th>
+                    <th>Ціна</th>
+                    <th>Дата наступного платежу</th>
+                </tr>
+                <tr>
+                    <td>Netflix</td>
+                    <td>299 грн</td>
+                    <td>20 жовтня 2024</td>
+                </tr>
+                <tr>
+                    <td>Spotify</td>
+                    <td>199 грн</td>
+                    <td>15 жовтня 2024</td>
+                </tr>
+                <tr>
+                    <td>Adobe Creative Cloud</td>
+                    <td>599 грн</td>
+                    <td>1 листопада 2024</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Секція для форми і списку -->
+    <section class="form-list">
+        <div class="form-container">
+            <h2>Додати нову підписку</h2>
+            <form action="#">
+                <label for="service-name">Назва сервісу:</label>
+                <input type="text" id="service-name" name="service-name" required>
+
+                <label for="price">Ціна (грн):</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="payment-date">Дата наступного платежу:</label>
+                <input type="date" id="payment-date" name="payment-date" required>
+
+                <label for="notes">Коментар:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+
+                <button type="submit">Додати підписку</button>
+            </form>
+        </div>
+        <div class="list-container">
+            <h2>Списки підписок</h2>
+            <h3>Нумерований список підписок:</h3>
+            <ol>
+                <li>Netflix</li>
+                <li>Spotify</li>
+                <li>Adobe Creative Cloud</li>
+            </ol>
+
+            <h3>Маркірований список підписок:</h3>
+            <ul>
+                <li>Netflix — 299 грн</li>
+                <li>Spotify — 199 грн</li>
+                <li>Adobe Creative Cloud — 599 грн</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Опис предметної галузі</h2>
+        <p>Щоб дізнатися більше про предметну галузь та функціонал Менеджера Підписок, відвідайте сторінку <a href="index.html">Опис предметної галузі</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Менеджер Підписок. Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
